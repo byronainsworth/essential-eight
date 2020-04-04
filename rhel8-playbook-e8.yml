@@ -29,6 +29,7 @@
 ###############################################################################
 
 - hosts: all
+  become: true
   vars:
     var_selinux_policy_name: !!str targeted
     var_selinux_state: !!str enforcing
