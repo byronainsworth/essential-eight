@@ -33,7 +33,8 @@
     var_selinux_policy_name: !!str targeted
     var_selinux_state: !!str enforcing
     var_auditd_flush: !!str incremental_async
-    var_system_crypto_policy: !!str DEFAULT:NO-SHA1
+    #var_system_crypto_policy: !!str DEFAULT:NO-SHA1
+    var_system_crypto_policy: !!str DEFAULT
   tasks:
     - name: Ensure firewalld is installed
       package:
